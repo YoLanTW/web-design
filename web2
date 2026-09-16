@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>>
+strong {
+  font-weight: bold;
+  font-size: large;
+  fonr-style: italic;
+}
+</style>
+</head>
+<body>
+
+<p>A strong element is displayed like this</p>
+
+<strong>Some important test</strong>
+
+<p>Change the default CSS setting to see the effect</p>
+
+</body>
+</html>
