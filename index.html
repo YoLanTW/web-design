@@ -1,61 +1,410 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>My Favorite Planet</title>
-  </head>
-  <body>
-    <h1>My Favorite Planet</h1>
-    
-    <h2>Mars</h2>
-    
-    <p>Mars is the <strong>fourth</strong> planet from the Sun</p>
-    
-    <p>
-      I think Mars is <em>one of the most interesting planet</em> in our solar system
-    </p>
-    
-    <hr>
-    
-    <h3> Some Facts</h3>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Night 2026</title>
 
-    <p>Mars has 2 moons:<br>
-        Phobos<br>
-        Deimos
-    </p>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 30px;
+            background-color: #d8d4d4;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 980px;
+            min-height: 720px;
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+        }
+
+        .content {
+            width: 78%;
+            padding: 26px 45px 35px 45px;
+            background-color: #f7f0e7;
+        }
+
+        .sidebar {
+            width: 22%;
+            background-color: white;
+            padding-top: 48px;
+            overflow: hidden;
+        }
+
+        /* Title */
+        .event-title {
+            margin: 0;
+            color: #990000;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        .date {
+            margin: 0;
+            font-size: 13px;
+            font-weight: bold;
+            color: #990000;
+        }
+
+        .time {
+            margin: 2px 0 14px 0;
+            font-size: 13px;
+        }
+
+        /* Poster */
+        .poster {
+            width: 240px;
+            height: 160px;
+            margin-bottom: 18px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Section */
+        .section-title {
+            margin: 0 0 17px 0;
+            padding: 2px 0;
+            color: #990000;
+            background-color: #ead8bd;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        /* Description */
+        .description {
+            font-size: 13px;
+            line-height: 1.55;
+            margin: 0 0 14px 0;
+        }
+
+        .description strong {
+            color: #990000;
+        }
+
+        .ticket {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .ticket del {
+            color: #555;
+        }
+
+        .special-price {
+            color: #990000;
+            font-weight: bold;
+        }
+
+        .change-time {
+            font-size: 13px;
+            margin: 0 0 14px 0;
+        }
+
+        .old-time {
+            color: red;
+        }
+
+        .new-time {
+            color: green;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Links */
+        .info-links {
+            margin-bottom: 15px;
+        }
+
+        .info-links a {
+            display: block;
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            color: white;
+            background-color: #990000;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: pink;
+            background-color: yellow;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: #fff6cf;
+            padding: 8px 0 10px 0;
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        .contact p {
+            margin: 0;
+        }
+
+        /* Sidebar */
+        .result-title {
+            display: inline-block;
+            margin: 0;
+            padding: 12px 20px;
+            background-color: #444;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .sidebar-content {
+            padding: 15px;
+        }
+
+        .code-example {
+            font-size: 25px;
+            line-height: 1.55;
+            white-space: nowrap;
+        }
+
+        .link-description {
+            margin-top: 70px;
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+        .example-unvisited {
+            color: #ffff00;
+        }
+
+        .example-visited {
+            color: #777;
+        }
+
+        .example-active {
+            color: #ff00ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            body {
+                padding: 10px;
+            }
+
+            .page {
+                flex-direction: column;
+            }
+
+            .content,
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .sidebar {
+                padding: 20px;
+            }
+
+            .code-example {
+                font-size: 20px;
+            }
+
+            .link-description {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- 左側主要內容 -->
+        <main class="content">
+
+            <h1 class="event-title">
+                JAZZ NIGHT 2026
+            </h1>
+
+            <div class="subtitle">
+                Live Music &amp; Dance
+            </div>
+
+            <div class="date">
+                Saturday, October 10, 2026
+            </div>
+
+            <div class="time">
+                7:30 PM – 10:30 PM
+            </div>
+
+            <!-- 活動圖片 -->
+            <img
+                class="poster"
+                src="https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://zh.pngtree.com/so/%25E8%25B6%2585%25E5%258F%25AF%25E6%2584%259B&ved=2ahUKEwi4z8TGqf-WAxW0j68BHeU5Fj8QqoUBegQIBRAB&usg=AOvVaw0X4NkcXyL3VJXY1Kzp0S2Q"
+                alt="Jazz Night 2026 poster"
+            >
+
+            <!-- About the Event -->
+            <h2 class="section-title">
+                About the Event
+            </h2>
+
+            <p class="description">
+                Join us for an evening of
+                <strong>live jazz, dancing, and good music.</strong>
+            </p>
+
+            <div class="ticket">
+                Ticket:
+                <del>$30</del>
+                <br>
+
+                <span class="special-price">
+                    Special Price: $20
+                </span>
+            </div>
+
+            <p class="change-time">
+                We originally planned to start at
+                <del class="old-time">8:00 PM</del>
+                <ins class="new-time">7:30 PM</ins>.
+            </p>
+
+            <!-- More Information -->
+            <h2 class="section-title">
+                More Information
+            </h2>
+
+            <div class="info-links">
+
+                <a href="https://example.com">
+                    Visit our website
+                </a>
+
+                <a href="mailto:jazznight@example.com">
+                    Email us
+                </a>
+
+                <a href="tel:+886212345678">
+                    Call us
+                </a>
+
+            </div>
+
+            <!-- Contact -->
+            <h2 class="section-title">
+                Contact
+            </h2>
+
+            <div class="contact">
+
+                <p>
+                    <em>Jazz Night Taipei</em>
+                </p>
+
+                <p>
+                    123 Music Street, Taipei
+                </p>
+
+                <p>
+                    <a href="mailto:jazznight@example.com">
+                        jazznight@example.com
+                    </a>
+                </p>
+
+            </div>
+
+        </main>
 
 
-    <p>The average distance from Mars to the Suni s about 2.28 &times; 10<sup>8</sup>km</p>
+        <!-- 右側 RESULT -->
+        <aside class="sidebar">
 
-    <p>Water is H<sub>2</sub>O.</p>
-    <p><a href="https://www.ntut.edu.tw/">this is NTUT</a></p>
-    <p>
-    An image as a link: 
-    <a href="https://www.w3schools.com/">
-    <img alt="W3schools" src="images.png" width="100" height="100">
-    </a>
-    </p>
-    <hr>
+            <div class="result-title">
+                RESULT
+            </div>
 
-    <h4>Wht I Like Mars</h4>
+            <div class="sidebar-content">
 
-    <p>Mars is cold and dry.<br>
-        but scientise are sill exploring it.
-    </p>
+                <div class="code-example">
+                    &lt;a href&gt;<br>
+                    &lt;img src&gt;<br>
+                    &lt;ins&gt;<br>
+                    &lt;del&gt;<br>
+                    &lt;s&gt;
+                </div>
 
-    <p><strong>Maybe humans will visit Mars one day!</strong></p>
+                <div class="link-description">
 
-    <hr>
-    
-    <h5>Kepp Exploring</h5>
-    <p>
-        <strong>Remember:</strong> science being with curiisity
-    </p>
+                    <div>
+                        An
+                        <span class="example-unvisited">
+                            <u>unvisited link</u>
+                        </span>
+                        is underlined and
+                        <span class="example-unvisited">
+                            Yellow
+                        </span>
+                    </div>
 
-    <p>I <em style="color: purple">really</em> want to see humans explore Mars in the future.</p>
+                    <div>
+                        A
+                        <span class="example-visited">
+                            <u>visited link</u>
+                        </span>
+                        is underlined and
+                        <span class="example-visited">
+                            Grey
+                        </span>
+                    </div>
 
-    <p>
-        <abbr title="National Aeronautics and Space Administration">NASA</abbr> 
-        has sent many missions to study Mars.
-    </p>
-  </body>
+                    <div>
+                        An
+                        <span class="example-active">
+                            <u>active link</u>
+                        </span>
+                        is underlined, yellow background and
+                        <span class="example-active">
+                            Pink
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</body>
 </html>
