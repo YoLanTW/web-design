@@ -23,24 +23,18 @@
             max-width: 980px;
             min-height: 720px;
             margin: 0 auto;
-            background-color: white;
-            display: flex;
-        }
-
-        .content {
-            width: 78%;
-            padding: 26px 45px 35px 45px;
             background-color: #f7f0e7;
         }
 
-        .sidebar {
-            width: 22%;
-            background-color: white;
-            padding-top: 48px;
-            overflow: hidden;
+        .content {
+            width: 100%;
+            padding: 26px 45px 35px 45px;
         }
 
-        /* Title */
+        /* =========================
+           Title
+        ========================= */
+
         .event-title {
             margin: 0;
             color: #990000;
@@ -67,7 +61,10 @@
             font-size: 13px;
         }
 
-        /* Poster */
+        /* =========================
+           Poster
+        ========================= */
+
         .poster {
             width: 240px;
             height: 160px;
@@ -76,7 +73,10 @@
             object-fit: cover;
         }
 
-        /* Section */
+        /* =========================
+           Section Title
+        ========================= */
+
         .section-title {
             margin: 0 0 17px 0;
             padding: 2px 0;
@@ -86,7 +86,10 @@
             font-weight: bold;
         }
 
-        /* Description */
+        /* =========================
+           Description
+        ========================= */
+
         .description {
             font-size: 13px;
             line-height: 1.55;
@@ -96,6 +99,10 @@
         .description strong {
             color: #990000;
         }
+
+        /* =========================
+           Ticket
+        ========================= */
 
         .ticket {
             font-size: 13px;
@@ -112,6 +119,10 @@
             font-weight: bold;
         }
 
+        /* =========================
+           Time Change
+        ========================= */
+
         .change-time {
             font-size: 13px;
             margin: 0 0 14px 0;
@@ -127,7 +138,10 @@
             text-decoration: underline;
         }
 
-        /* Links */
+        /* =========================
+           Information Links
+        ========================= */
+
         .info-links {
             margin-bottom: 15px;
         }
@@ -158,7 +172,10 @@
             background-color: yellow;
         }
 
-        /* Contact */
+        /* =========================
+           Contact
+        ========================= */
+
         .contact {
             background-color: #fff6cf;
             padding: 8px 0 10px 0;
@@ -170,74 +187,22 @@
             margin: 0;
         }
 
-        /* Sidebar */
-        .result-title {
-            display: inline-block;
-            margin: 0;
-            padding: 12px 20px;
-            background-color: #444;
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-        }
+        /* =========================
+           Responsive
+        ========================= */
 
-        .sidebar-content {
-            padding: 15px;
-        }
-
-        .code-example {
-            font-size: 25px;
-            line-height: 1.55;
-            white-space: nowrap;
-        }
-
-        .link-description {
-            margin-top: 70px;
-            font-size: 16px;
-            line-height: 1.45;
-        }
-
-        .example-unvisited {
-            color: #ffff00;
-        }
-
-        .example-visited {
-            color: #777;
-        }
-
-        .example-active {
-            color: #ff00ff;
-        }
-
-        /* Responsive */
         @media (max-width: 800px) {
             body {
                 padding: 10px;
-            }
-
-            .page {
-                flex-direction: column;
-            }
-
-            .content,
-            .sidebar {
-                width: 100%;
             }
 
             .content {
                 padding: 25px;
             }
 
-            .sidebar {
-                padding: 20px;
-            }
-
-            .code-example {
-                font-size: 20px;
-            }
-
-            .link-description {
-                margin-top: 20px;
+            .poster {
+                max-width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -247,7 +212,6 @@
 
     <div class="page">
 
-        <!-- 左側主要內容 -->
         <main class="content">
 
             <h1 class="event-title">
@@ -266,12 +230,14 @@
                 7:30 PM – 10:30 PM
             </div>
 
-            <!-- 活動圖片 -->
+
+            <!-- Jazz Night 圖片 -->
             <img
                 class="poster"
-                src="https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://zh.pngtree.com/so/%25E8%25B6%2585%25E5%258F%25AF%25E6%2584%259B&ved=2ahUKEwi4z8TGqf-WAxW0j68BHeU5Fj8QqoUBegQIBRAB&usg=AOvVaw0X4NkcXyL3VJXY1Kzp0S2Q"
+                src="https://www.google.com/imgres?imgurl=https://png.pngtree.com/png-vector/20221222/ourmid/pngtree-super-cute-cartoon-vector-bear-png-image_6504049.png&imgrefurl=https://zh.pngtree.com/free-png-vectors/%25E5%258F%25AF%25E6%2584%259B%25E5%259C%2596%25E6%25A1%2588&h=360&w=360&tbnid=0jS7fnlhHHUNXM&q=%E5%9C%96%E7%89%87&tbnh=121&tbnw=121&usg=AI4_-kR_VdZtNRSYEzFfU54ppEJS-WzjPw&vet=1&docid=t8zp-cDSGtKFNM&sa=X&ved=2ahUKEwiKp8fAqv-WAxVwjq8BHcPYG5UQ9QF6BAgEEAQ"
                 alt="Jazz Night 2026 poster"
             >
+
 
             <!-- About the Event -->
             <h2 class="section-title">
@@ -299,6 +265,7 @@
                 <ins class="new-time">7:30 PM</ins>.
             </p>
 
+
             <!-- More Information -->
             <h2 class="section-title">
                 More Information
@@ -319,6 +286,7 @@
                 </a>
 
             </div>
+
 
             <!-- Contact -->
             <h2 class="section-title">
@@ -344,65 +312,6 @@
             </div>
 
         </main>
-
-
-        <!-- 右側 RESULT -->
-        <aside class="sidebar">
-
-            <div class="result-title">
-                RESULT
-            </div>
-
-            <div class="sidebar-content">
-
-                <div class="code-example">
-                    &lt;a href&gt;<br>
-                    &lt;img src&gt;<br>
-                    &lt;ins&gt;<br>
-                    &lt;del&gt;<br>
-                    &lt;s&gt;
-                </div>
-
-                <div class="link-description">
-
-                    <div>
-                        An
-                        <span class="example-unvisited">
-                            <u>unvisited link</u>
-                        </span>
-                        is underlined and
-                        <span class="example-unvisited">
-                            Yellow
-                        </span>
-                    </div>
-
-                    <div>
-                        A
-                        <span class="example-visited">
-                            <u>visited link</u>
-                        </span>
-                        is underlined and
-                        <span class="example-visited">
-                            Grey
-                        </span>
-                    </div>
-
-                    <div>
-                        An
-                        <span class="example-active">
-                            <u>active link</u>
-                        </span>
-                        is underlined, yellow background and
-                        <span class="example-active">
-                            Pink
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </aside>
 
     </div>
 
