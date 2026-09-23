@@ -1,30 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+
+<title>Midnight Blues</title>
+
 <style>
 
-  .row{
-    display: flex;
-  }
+body {
+margin: 0;
+background-color: #111;
+color: white;
+font-family: Georgia, serif;
+}
 
-  .box {
-    width:50%;
-    padding: 20px;
-    background-color: lightblue;
-  }
+.header {
+background-color: #b93652;
+text-align: center;
+padding: 30px;
+}
+
+.header h1 {
+color: #fff1c7;
+}
+
+.event-image {
+text-align: center;
+padding: 20px;
+}
+
+.event-image img {
+width: 60%;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+width: 90%;
+margin: auto;
+}
+
+.light {
+background-color: #eee2c5;
+color: #4b2630;
+padding: 20px;
+}
+
+.light h2 {
+color: #8b3a4a;
+}
+
+.dark {
+background-color: #17283d;
+color: white;
+padding: 20px;
+}
+
+.dark h2 {
+color: #f1d17c;
+}
+
+.highlight {
+color: #f1d17c;
+}
+
+del {
+color: red;
+}
+
+ins {
+color: green;
+}
+
+s {
+color: #ff7777;
+}
+
+.contact {
+background-color: #b93652;
+text-align: center;
+padding: 20px;
+
+width: 90%;
+margin: auto;
+
+box-sizing: border-box;
+}
+
+a:link {
+color: yellow;
+}
+
+a:visited {
+color: violet;
+}
+
+a:hover {
+color: red;
+}
+
+a:active {
+color: green;
+}
+
 </style>
+
 </head>
 
+
 <body>
-  <ol start="50">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-  <ol type="i"start="50">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-</body> 
+
+
+<div class="header">
+
+<h1>
+MIDNIGHT BLUES
+</h1>
+
+<p>
+<em>
+A Night of Jazz,
+Rhythm &amp; Dance
+</em>
+</p>
+
+<p>
+October 10, 2026
+<br>
+7:30 PM - 10:30 PM
+<br>
+Taipei
+</p>
+
+</div>
+
+
+<div class="event-image">
+
+<a href="https://example.com">
+
+<img
+src="images.jpeg"
+alt="Jazz Night">
+
+</a>
+
+<p>
+<em>
+Click the image to visit
+the event website.
+</em>
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="light">
+
+<h2>
+About the Night
+</h2>
+
+<p>
+
+Welcome to
+<strong>Midnight Blue</strong>,
+a night inspired by
+classic jazz clubs
+and social dancing.
+
+</p>
+
+<p>
+
+Enjoy live music,
+meet new people,
+and spend the evening
+dancing to
+
+<em>
+swing, jazz,
+and rhythm &amp; blues.
+</em>
+
+</p>
+
+<p>
+Good music.
+Good people.
+One unforgettable night.
+</p>
+
+</div>
+
+
+<div class="dark">
+
+<h2>
+Night Highlights
+</h2>
+
+<p>
+
+<strong class="highlight">
+LIVE BAND
+</strong>
+
+<br>
+
+The Blue Notes Quartet
+
+</p>
+
+<p>
+
+<strong class="highlight">
+SOCIAL DANCE
+</strong>
+
+<br>
+
+An open dance floor
+for everyone.
+
+</p>
+
+<p>
+
+<strong class="highlight">
+DRESS UP
+</strong>
+
+<br>
+
+Vintage style is encouraged,
+but not required.
+
+</p>
+
+<p>
+
+Music starts at
+<strong>8:00 PM</strong>.
+
+</p>
+
+</div>
+
+
+<div class="light">
+
+<h2>
+Tonight's Program
+</h2>
+
+<p>
+7:30 PM - Doors Open
+</p>
+
+<p>
+8:00 PM - Live Jazz Set
+</p>
+
+<p>
+9:00 PM - Social Dance
+</p>
+
+<p>
+10:00 PM -
+Rhythm &amp; Blues Jam
+</p>
+
+<p>
+
+<strong>
+Schedule Update:
+</strong>
+
+<br>
+
+<del>
+Doors open at 8:00 PM
+</del>
+
+<br>
+
+<ins>
+Doors now open at 7:30 PM
+</ins>
+
+</p>
+
+</div>
+
+
+<div class="dark">
+
+<h2>
+Tickets
+</h2>
+
+<p>
+
+Early Bird:
+
+<s>
+NT$800
+</s>
+
+<br>
+
+<strong class="highlight">
+Special Price:
+NT$600
+</strong>
+
+</p>
+
+<p>
+
+Your ticket includes:
+
+<br>
+
+Live music +
+Social dance +
+Welcome drink
+
+</p>
+
+<p>
+
+<strong>
+Only 80 tickets
+are available.
+</strong>
+
+</p>
+
+<a href="https://example.com">
+Reserve Your Ticket
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="contact">
+
+<h2>
+Contact Us
+</h2>
+
+<address>
+
+Midnight Blue Jazz Club
+
+<br>
+
+88 Blue Note Lane,
+Taipei
+
+<br>
+
+<a href=
+"mailto:hello@midnightblue.example">
+
+hello@midnightblue.example
+
+</a>
+
+<br>
+
+<a href=
+"tel:+886212345678">
+
++886-2-1234-5678
+
+</a>
+
+</address>
+
+</div>
+
+
+</body>
+
 </html>
